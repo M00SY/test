@@ -1,0 +1,29 @@
+<div class="d-flex flex-column align-items-center justify-content-center">
+    <h1 class="text-center text-secondary-emphasis fw-bold pt-5">PORTFOLIO COMPONENT</h1>
+    <div class="line position-relative">
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row p-4">
+      <div class="col-md-4 mb-4" *ngFor="let image of images">
+        <div class="image position-relative">
+          <img class="w-100 rounded-3" [src]="image.src" [alt]="image.alt" (click)="openModal(image)">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal" *ngIf="selectedImage">
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <img [src]="selectedImage?.src" [alt]="selectedImage?.alt" class="w-100">
+    </div>
+  </div>
+  
+  <app-contact></app-contact>
+  

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+/* .background {
+    background-color: #1ABC9C;
+} */
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.line .star::before{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    background-color: #000;
+    right: 150%;
+    top: 50%;
+}
+.star::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    background-color: #000;
+    left: 150%;
+    top: 50%;
+}

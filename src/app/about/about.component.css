@@ -1,0 +1,11 @@
+.bg-color{
+    background-color: #2BBC9C;
+    width: 100%;
+    height: 75vh;
+  }
+  .line .star::before{
+    background-color: #ffffff;
+}
+.star::after{
+    background-color: #ffffff;
+}

@@ -1,0 +1,62 @@
+
+a{
+    text-decoration: none;
+  }
+  
+  .navbar{
+  background-color: #2C3E50;
+  }
+  h2{
+    font-size: 30px !important ;
+  }
+  
+  .bg-color{
+    background-color: #2BBC9C;
+    width: 100%;
+    height: 75vh;
+  }
+  /* .home{
+    position: absolute;
+  } */
+  
+  .star {
+    position: absolute;
+  
+  }
+  
+  .star::before,
+  .star::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px; /* Adjust as needed */
+    height: 2px; /* Adjust as needed */
+    background-color: white;
+  }
+  
+  .star::before {
+    left: -50px; /* Adjust as needed */
+    transform: translateY(-50%);
+  }
+  
+  .star::after {
+    right: -50px; /* Adjust as needed */
+    transform: translateY(-50%);
+  }
+  .home img{
+    position: relative;
+    width: 20%;
+  }
+  
+  .bg-footer{
+    background-color:#2C3E50;
+    
+  }
+  /* .icon{ position: absolute;} */
+  .icon-border{
+    position: relative;
+    border: 1px white solid;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
